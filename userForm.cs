@@ -76,7 +76,7 @@ namespace InventoryManagementSystem
                     cm = new SqlCommand("DELETE FROM tbUser WHERE username LIKE '" + dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
                     cm.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("Record has been successfully deleted!");
+                    MessageBox.Show("تم الحذف بنجاح !");
                 }
             }
             LoadUser();

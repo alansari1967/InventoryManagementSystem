@@ -104,6 +104,50 @@ namespace InventoryManagementSystem
         private void UserModelForm_Load(object sender, EventArgs e)
         {
 
+            txtUserName.Focus();
+            txtUserName.Select();
+            
+
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtUserName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                txtFullName.Focus();
+                txtFullName.SelectAll();
+            }
+        }
+
+        private void txtFullName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                txtPassword.Focus();
+                txtPassword.SelectAll();
+            }
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                txtRepass.Focus();
+                txtRepass.SelectAll();
+            }
+        }
+
+        private void txtRepass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                txtPhoneNumber.Focus();
+                txtPhoneNumber.SelectAll();
+            }
         }
     }
 }

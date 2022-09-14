@@ -87,7 +87,8 @@
             this.txtFullName.Location = new System.Drawing.Point(185, 122);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(352, 24);
-            this.txtFullName.TabIndex = 2;
+            this.txtFullName.TabIndex = 1;
+            this.txtFullName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFullName_KeyDown);
             // 
             // label4
             // 
@@ -107,6 +108,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(352, 24);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // label5
             // 
@@ -125,7 +127,7 @@
             this.txtPhoneNumber.Location = new System.Drawing.Point(185, 224);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(352, 24);
-            this.txtPhoneNumber.TabIndex = 2;
+            this.txtPhoneNumber.TabIndex = 4;
             // 
             // btnSave
             // 
@@ -137,7 +139,7 @@
             this.btnSave.Location = new System.Drawing.Point(430, 276);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(132, 40);
-            this.btnSave.TabIndex = 3;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "حفظ";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -152,7 +154,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(292, 276);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(132, 40);
-            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "تعديل";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -167,7 +169,7 @@
             this.btnClear.Location = new System.Drawing.Point(154, 276);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(132, 40);
-            this.btnClear.TabIndex = 3;
+            this.btnClear.TabIndex = 5;
             this.btnClear.Text = "افراغ";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -189,7 +191,8 @@
             this.txtRepass.Location = new System.Drawing.Point(185, 191);
             this.txtRepass.Name = "txtRepass";
             this.txtRepass.Size = new System.Drawing.Size(352, 24);
-            this.txtRepass.TabIndex = 2;
+            this.txtRepass.TabIndex = 3;
+            this.txtRepass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRepass_KeyDown);
             // 
             // label2
             // 
@@ -208,7 +211,9 @@
             this.txtUserName.Location = new System.Drawing.Point(185, 88);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(352, 24);
-            this.txtUserName.TabIndex = 2;
+            this.txtUserName.TabIndex = 0;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
+            this.txtUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUserName_KeyDown);
             // 
             // UserModelForm
             // 
