@@ -85,6 +85,7 @@
             this.btnClear.TabIndex = 19;
             this.btnClear.Text = "افراغ";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -99,6 +100,7 @@
             this.btnUpdate.TabIndex = 20;
             this.btnUpdate.Text = "تعديل";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -113,6 +115,7 @@
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "حفظ";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtPDes
             // 
@@ -121,6 +124,7 @@
             this.txtPDes.Name = "txtPDes";
             this.txtPDes.Size = new System.Drawing.Size(352, 27);
             this.txtPDes.TabIndex = 17;
+            this.txtPDes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPDes_KeyDown);
             // 
             // label6
             // 
@@ -151,6 +155,7 @@
             this.txtPPrice.Name = "txtPPrice";
             this.txtPPrice.Size = new System.Drawing.Size(352, 27);
             this.txtPPrice.TabIndex = 16;
+            this.txtPPrice.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPPrice_KeyDown);
             // 
             // label4
             // 
@@ -170,6 +175,7 @@
             this.txtPQty.Name = "txtPQty";
             this.txtPQty.Size = new System.Drawing.Size(352, 27);
             this.txtPQty.TabIndex = 13;
+            this.txtPQty.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPQty_KeyDown);
             // 
             // label3
             // 
@@ -189,6 +195,7 @@
             this.txtPName.Name = "txtPName";
             this.txtPName.Size = new System.Drawing.Size(352, 27);
             this.txtPName.TabIndex = 9;
+            this.txtPName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPName_KeyDown);
             // 
             // label2
             // 
@@ -260,7 +267,9 @@
             this.Name = "ProductModuleForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "ProductModuleForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "معلومات المادة";
+            this.Load += new System.EventHandler(this.ProductModuleForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
