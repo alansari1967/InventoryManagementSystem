@@ -52,11 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerButton.cs">
-      <SubType>Component</SubType>
+    <Compile Include="CustomerModelForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerButton.Designer.cs">
-      <DependentUpon>CustomerButton.cs</DependentUpon>
+    <Compile Include="CustomerModelForm.Designer.cs">
+      <DependentUpon>CustomerModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutomerForm.Designer.cs">
+      <DependentUpon>CutomerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -78,8 +84,11 @@
     <Compile Include="UserModelForm.Designer.cs">
       <DependentUpon>UserModelForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomerButton.resx">
-      <DependentUpon>CustomerButton.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerModelForm.resx">
+      <DependentUpon>CustomerModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutomerForm.resx">
+      <DependentUpon>CutomerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
