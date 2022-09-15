@@ -95,6 +95,7 @@
             this.btnCategory.TabIndex = 1;
             this.btnCategory.Text = "صنف المادة";
             this.btnCategory.UseVisualStyleBackColor = false;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // btnCustomer
             // 
