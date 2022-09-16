@@ -69,6 +69,7 @@
             this.btnOrder.TabIndex = 1;
             this.btnOrder.Text = "الطلب";
             this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnUser
             // 

@@ -94,6 +94,7 @@
             this.txtCPhone.Name = "txtCPhone";
             this.txtCPhone.Size = new System.Drawing.Size(352, 28);
             this.txtCPhone.TabIndex = 18;
+            this.txtCPhone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCPhone_KeyDown);
             // 
             // label5
             // 
@@ -113,6 +114,7 @@
             this.txtCName.Name = "txtCName";
             this.txtCName.Size = new System.Drawing.Size(352, 28);
             this.txtCName.TabIndex = 8;
+            this.txtCName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCName_KeyDown);
             // 
             // label2
             // 
@@ -142,12 +144,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("LBC", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(424, 22);
+            this.label1.Location = new System.Drawing.Point(378, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 25);
+            this.label1.Size = new System.Drawing.Size(195, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "اضافة مقدم طلب";
+            this.label1.Text = "معلومات مقدم الطلب";
             // 
             // lblCId
             // 
@@ -192,6 +194,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "معلومات مقدم الطلب";
+            this.Load += new System.EventHandler(this.CustomerModelForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -209,8 +212,8 @@
         public System.Windows.Forms.TextBox txtCName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label lblCId;
         public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label1;
     }
 }

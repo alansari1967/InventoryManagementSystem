@@ -143,7 +143,7 @@ namespace InventoryManagementSystem
 
         private void txtPDes_KeyDown(object sender, KeyEventArgs e)
         {
-            comboCat.Focus();
+            
         }
     }
 }

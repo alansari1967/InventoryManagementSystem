@@ -87,5 +87,26 @@ namespace InventoryManagementSystem
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void CustomerModelForm_Load(object sender, EventArgs e)
+        {
+            txtCName.Focus();
+        }
+
+        private void txtCName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                txtCPhone.Focus();
+            }
+        }
+
+        private void txtCPhone_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                btnSave.PerformClick();
+            }
+        }
     }
 }

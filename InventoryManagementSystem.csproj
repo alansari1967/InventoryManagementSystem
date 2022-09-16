@@ -88,6 +88,18 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderModuleForm.Designer.cs">
+      <DependentUpon>OrderModuleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasingAndWarehousingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchasingAndWarehousingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasingAndWarehousingDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchasingAndWarehousingDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="userForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +153,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderModuleForm.resx">
+      <DependentUpon>OrderModuleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductForm.resx">
       <DependentUpon>ProductForm.cs</DependentUpon>
@@ -163,6 +191,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="PurchasingAndWarehousingDataSet.xsc">
+      <DependentUpon>PurchasingAndWarehousingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PurchasingAndWarehousingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchasingAndWarehousingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchasingAndWarehousingDataSet.xss">
+      <DependentUpon>PurchasingAndWarehousingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PurchasingAndWarehousingDataSet1.xsc">
+      <DependentUpon>PurchasingAndWarehousingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PurchasingAndWarehousingDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchasingAndWarehousingDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PurchasingAndWarehousingDataSet1.xss">
+      <DependentUpon>PurchasingAndWarehousingDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

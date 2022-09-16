@@ -124,9 +124,9 @@
             this.label1.Location = new System.Drawing.Point(424, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 25);
+            this.label1.Size = new System.Drawing.Size(145, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "اضافة صنف جديد";
+            this.label1.Text = "معلومات الصنف";
             // 
             // label3
             // 
@@ -163,7 +163,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblCatId);
             this.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "CategoryModuleForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
