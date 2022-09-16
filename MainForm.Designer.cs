@@ -38,12 +38,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExite = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel1.Controls.Add(this.btnExite);
             this.panel1.Controls.Add(this.btnOrder);
             this.panel1.Controls.Add(this.btnUser);
             this.panel1.Controls.Add(this.btnCategory);
@@ -63,7 +68,7 @@
             this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrder.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnOrder.Location = new System.Drawing.Point(154, 66);
+            this.btnOrder.Location = new System.Drawing.Point(238, 66);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(132, 40);
             this.btnOrder.TabIndex = 1;
@@ -77,7 +82,7 @@
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUser.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnUser.Location = new System.Drawing.Point(310, 66);
+            this.btnUser.Location = new System.Drawing.Point(390, 66);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(132, 40);
             this.btnUser.TabIndex = 1;
@@ -91,7 +96,7 @@
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategory.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnCategory.Location = new System.Drawing.Point(466, 66);
+            this.btnCategory.Location = new System.Drawing.Point(542, 66);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(132, 40);
             this.btnCategory.TabIndex = 1;
@@ -105,7 +110,7 @@
             this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomer.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnCustomer.Location = new System.Drawing.Point(622, 66);
+            this.btnCustomer.Location = new System.Drawing.Point(694, 66);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(132, 40);
             this.btnCustomer.TabIndex = 1;
@@ -119,7 +124,7 @@
             this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProduct.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnProduct.Location = new System.Drawing.Point(778, 66);
+            this.btnProduct.Location = new System.Drawing.Point(846, 66);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(132, 40);
             this.btnProduct.TabIndex = 1;
@@ -150,12 +155,37 @@
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.pictureBox1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 115);
             this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1064, 568);
             this.panelMain.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(241, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(583, 442);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExite
+            // 
+            this.btnExite.BackColor = System.Drawing.Color.White;
+            this.btnExite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExite.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnExite.Location = new System.Drawing.Point(85, 66);
+            this.btnExite.Name = "btnExite";
+            this.btnExite.Size = new System.Drawing.Size(132, 40);
+            this.btnExite.TabIndex = 2;
+            this.btnExite.Text = "خروج";
+            this.btnExite.UseVisualStyleBackColor = false;
+            this.btnExite.Click += new System.EventHandler(this.btnExite_Click);
             // 
             // MainForm
             // 
@@ -166,7 +196,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Narrow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -177,6 +207,8 @@
             this.Text = "الرئيسية";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,5 +224,7 @@
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnExite;
     }
 }

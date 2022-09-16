@@ -57,5 +57,10 @@ namespace InventoryManagementSystem
         {
             openChildForm(new OrderForm());
         }
+
+        private void btnExite_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
