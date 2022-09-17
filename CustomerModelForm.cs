@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
 
 
 namespace InventoryManagementSystem
@@ -29,9 +30,10 @@ namespace InventoryManagementSystem
                 if (MessageBox.Show("هل انت متاكد من اضافة مقدم الطلب ؟", "اضافة", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("INSERT INTO tbCustomer(cname,cphone)VALUES(@cname,@cphone)", con);
+                    cm = new SqlCommand("INSERT INTO tbCustomer(cname,cphone,csection)VALUES(@cname,@cphone,@csection)", con);
                     cm.Parameters.AddWithValue("@cname", txtCName.Text);
                     cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
+                    cm.Parameters.AddWithValue("csection", txtsection.Text);
                     
                     con.Open();
                     cm.ExecuteNonQuery();
@@ -70,9 +72,10 @@ namespace InventoryManagementSystem
                 if (MessageBox.Show("هل انت متاكد من تعديل العنصر ؟", "تعديل", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("UPDATE tbCustomer SET cname = @cname,cphone=@cphone WHERE cid LIKE '" + lblCId.Text + "' ", con);
+                    cm = new SqlCommand("UPDATE tbCustomer SET cname = @cname,cphone=@cphone,csection=@csection WHERE cid LIKE '" + lblCId.Text + "' ", con);
                     cm.Parameters.AddWithValue("@cname", txtCName.Text);
                     cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
+                    cm.Parameters.AddWithValue("@csection",txtsection.Text);
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
@@ -105,8 +108,13 @@ namespace InventoryManagementSystem
         {
             if (e.KeyData == Keys.Enter)
             {
-                btnSave.PerformClick();
+                txtsection.Focus();
             }
+        }
+
+        private void txtsection_KeyDown(object sender, KeyEventArgs e)
+        {
+            btnSave.PerformClick();
         }
     }
 }

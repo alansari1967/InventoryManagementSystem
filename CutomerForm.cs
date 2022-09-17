@@ -31,7 +31,7 @@ namespace InventoryManagementSystem
             while (dr.Read())
             {
                 i++;
-                dgvCustomer.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString());
+                dgvCustomer.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
             }
             dr.Close();
             con.Close();
@@ -66,6 +66,7 @@ namespace InventoryManagementSystem
                 customerModule.lblCId.Text = dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString();
                 customerModule.txtCName.Text = dgvCustomer.Rows[e.RowIndex].Cells[2].Value.ToString();
                 customerModule.txtCPhone.Text = dgvCustomer.Rows[e.RowIndex].Cells[3].Value.ToString();
+                //customerModule.txtsection.Text = dgvCustomer.Rows[e.RowIndex].Cells["csection"].Value.
 
                 customerModule.btnSave.Enabled = false;
                 customerModule.btnUpdate.Enabled = true;
