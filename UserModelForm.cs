@@ -1,17 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace InventoryManagementSystem
 {
-    
+
     public partial class UserModelForm : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=ASUS17\SQLEXPRESS01;Initial Catalog=PurchasingAndWarehousing;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -78,7 +71,7 @@ namespace InventoryManagementSystem
                     MessageBox.Show("كلمة المرور غير مطابقة !", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                
+
                 if (MessageBox.Show("هل انت متاكد من التعديل ؟", "تحديث", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
@@ -92,13 +85,13 @@ namespace InventoryManagementSystem
                     MessageBox.Show("تم التحديث بنجاح !");
                     this.Dispose();
                 }
-                
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         private void UserModelForm_Load(object sender, EventArgs e)
@@ -106,7 +99,7 @@ namespace InventoryManagementSystem
 
             txtUserName.Focus();
             txtUserName.Select();
-            
+
 
         }
 

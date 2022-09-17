@@ -134,9 +134,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(46, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 21);
+            this.label3.Size = new System.Drawing.Size(105, 21);
             this.label3.TabIndex = 33;
-            this.label3.Text = "معرف مقدم الطلب :";
+            this.label3.Text = "معرف الصنف :";
             // 
             // lblCatId
             // 
@@ -145,9 +145,8 @@
             this.lblCatId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblCatId.Location = new System.Drawing.Point(215, 163);
             this.lblCatId.Name = "lblCatId";
-            this.lblCatId.Size = new System.Drawing.Size(19, 21);
+            this.lblCatId.Size = new System.Drawing.Size(0, 21);
             this.lblCatId.TabIndex = 32;
-            this.lblCatId.Text = "0";
             // 
             // CategoryModuleForm
             // 
@@ -164,6 +163,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblCatId);
             this.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "CategoryModuleForm";

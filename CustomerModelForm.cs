@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Collections.Specialized.BitVector32;
 
 
 namespace InventoryManagementSystem
@@ -26,7 +18,7 @@ namespace InventoryManagementSystem
         {
             try
             {
-               
+
                 if (MessageBox.Show("هل انت متاكد من اضافة مقدم الطلب ؟", "اضافة", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
@@ -34,7 +26,7 @@ namespace InventoryManagementSystem
                     cm.Parameters.AddWithValue("@cname", txtCName.Text);
                     cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
                     cm.Parameters.AddWithValue("csection", txtsection.Text);
-                    
+
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
@@ -54,7 +46,7 @@ namespace InventoryManagementSystem
         {
             txtCName.Clear();
             txtCPhone.Clear();
-            
+
 
         }
 
@@ -75,7 +67,7 @@ namespace InventoryManagementSystem
                     cm = new SqlCommand("UPDATE tbCustomer SET cname = @cname,cphone=@cphone,csection=@csection WHERE cid LIKE '" + lblCId.Text + "' ", con);
                     cm.Parameters.AddWithValue("@cname", txtCName.Text);
                     cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
-                    cm.Parameters.AddWithValue("@csection",txtsection.Text);
+                    cm.Parameters.AddWithValue("@csection", txtsection.Text);
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();

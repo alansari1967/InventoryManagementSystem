@@ -226,9 +226,8 @@
             this.lblPid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblPid.Location = new System.Drawing.Point(234, 256);
             this.lblPid.Name = "lblPid";
-            this.lblPid.Size = new System.Drawing.Size(23, 25);
+            this.lblPid.Size = new System.Drawing.Size(0, 25);
             this.lblPid.TabIndex = 34;
-            this.lblPid.Text = "0";
             // 
             // comboCat
             // 
@@ -263,7 +262,9 @@
             this.Controls.Add(this.txtPName);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "ProductModuleForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;

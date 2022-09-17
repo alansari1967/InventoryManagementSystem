@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InventoryManagementSystem
@@ -97,12 +90,12 @@ namespace InventoryManagementSystem
 
         private void dgvCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
-        
+
         private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
@@ -173,7 +166,7 @@ namespace InventoryManagementSystem
 
         public void GetQty()
         {
-            cm = new SqlCommand("SELECT pqty FROM tbProduct WHERE pid='"+ txtPid.Text +"'", con);
+            cm = new SqlCommand("SELECT pqty FROM tbProduct WHERE pid='" + txtPid.Text + "'", con);
             con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -196,7 +189,7 @@ namespace InventoryManagementSystem
             txtPid.Text = dgvProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtPName.Text = dgvProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtPrice.Text = dgvProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
-            
+
         }
 
         private void OrderModuleForm_Load(object sender, EventArgs e)

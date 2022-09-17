@@ -159,9 +159,8 @@
             this.lblCId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblCId.Location = new System.Drawing.Point(188, 229);
             this.lblCId.Name = "lblCId";
-            this.lblCId.Size = new System.Drawing.Size(19, 21);
+            this.lblCId.Size = new System.Drawing.Size(0, 21);
             this.lblCId.TabIndex = 22;
-            this.lblCId.Text = "0";
             // 
             // label3
             // 
@@ -211,6 +210,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "CustomerModelForm";

@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InventoryManagementSystem
@@ -40,7 +33,7 @@ namespace InventoryManagementSystem
 
         private void userForm_Load(object sender, EventArgs e)
         {
-         
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -57,7 +50,7 @@ namespace InventoryManagementSystem
             string colName = dgvUser.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
-                UserModelForm userModule = new  UserModelForm();
+                UserModelForm userModule = new UserModelForm();
                 userModule.txtUserName.Text = dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString();
                 userModule.txtFullName.Text = dgvUser.Rows[e.RowIndex].Cells[2].Value.ToString();
                 userModule.txtPassword.Text = dgvUser.Rows[e.RowIndex].Cells[3].Value.ToString();
